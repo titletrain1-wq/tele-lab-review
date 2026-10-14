@@ -850,6 +850,47 @@ html.js .lab-panel.panel-hidden {
   display: none !important;
 }
 
+/* Academic Integrity 2-Group Guideline Banner */
+.integrity-guideline-banner {
+  background: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 14px 18px;
+  margin: 16px 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.02);
+}
+.guideline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--text-primary);
+}
+.guideline-badge {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 0.78rem;
+  padding: 3px 10px;
+  border-radius: 99px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.guideline-badge.copy {
+  background: rgba(217, 119, 6, 0.15);
+  color: #B45309;
+  border: 1px solid rgba(217, 119, 6, 0.3);
+}
+.guideline-badge.ai {
+  background: rgba(220, 38, 38, 0.15);
+  color: #DC2626;
+  border: 1px solid rgba(220, 38, 38, 0.3);
+}
+
 /* Student Profiles Styling */
 .profiles-container {
   width: 100%;
@@ -1678,7 +1719,7 @@ html.js .lab-panel.panel-hidden {
 </div>
 <span class="tab-topic">Master Signals &amp; PC Inputs</span>
 </div>
-<span class="tab-pill ai">2 Copy • 3 AI</span>
+<span class="tab-pill ai">2 Copy • 3 Using AI</span>
 </a>
 <a class="tab-btn" href="#panel-lab-2" id="tab-lab-2" onclick="switchLab(2); return false;">
 <div class="tab-content">
@@ -1687,7 +1728,7 @@ html.js .lab-panel.panel-hidden {
 </div>
 <span class="tab-topic">TIMS Intro &amp; AM Mod</span>
 </div>
-<span class="tab-pill ai">4 Copy • 1 AI</span>
+<span class="tab-pill ai">4 Copy • 1 Using AI</span>
 </a>
 <a class="tab-btn" href="#panel-lab-3" id="tab-lab-3" onclick="switchLab(3); return false;">
 <div class="tab-content">
@@ -1696,7 +1737,7 @@ html.js .lab-panel.panel-hidden {
 </div>
 <span class="tab-topic">Fourier &amp; Spectrum Analyzer</span>
 </div>
-<span class="tab-pill ai">4 Copy • 1 AI</span>
+<span class="tab-pill ai">4 Copy • 1 Using AI</span>
 </a>
 <a class="tab-btn" href="#panel-lab-4" id="tab-lab-4" onclick="switchLab(4); return false;">
 <div class="tab-content">
@@ -1705,7 +1746,7 @@ html.js .lab-panel.panel-hidden {
 </div>
 <span class="tab-topic">AM: DSBSC Modulation</span>
 </div>
-<span class="tab-pill ai">0 Copy • 1 AI</span>
+<span class="tab-pill ai">0 Copy • 1 Using AI</span>
 </a>
 <a class="tab-btn" href="#panel-lab-5" id="tab-lab-5" onclick="switchLab(5); return false;">
 <div class="tab-content">
@@ -1714,7 +1755,7 @@ html.js .lab-panel.panel-hidden {
 </div>
 <span class="tab-topic">AM: DSBFC Modulation</span>
 </div>
-<span class="tab-pill ai">3 Copy • 1 AI</span>
+<span class="tab-pill ai">3 Copy • 1 Using AI</span>
 </a>
 <a class="tab-btn" href="#panel-lab-6" id="tab-lab-6" onclick="switchLab(6); return false;">
 <div class="tab-content">
@@ -1723,7 +1764,7 @@ html.js .lab-panel.panel-hidden {
 </div>
 <span class="tab-topic">Frequency Modulation (FM)</span>
 </div>
-<span class="tab-pill ai">3 Copy • 1 AI</span>
+<span class="tab-pill ai">3 Copy • 1 Using AI</span>
 </a>
 <a class="tab-btn" href="#panel-lab-7" id="tab-lab-7" onclick="switchLab(7); return false;">
 <div class="tab-content">
@@ -1732,7 +1773,7 @@ html.js .lab-panel.panel-hidden {
 </div>
 <span class="tab-topic">Noise in Analog Systems</span>
 </div>
-<span class="tab-pill copy">2 Copy • 0 AI</span>
+<span class="tab-pill copy">2 Copy • 0 Using AI</span>
 </a>
 <a class="tab-btn" href="#panel-lab-8" id="tab-lab-8" onclick="switchLab(8); return false;">
 <div class="tab-content">
@@ -1741,7 +1782,7 @@ html.js .lab-panel.panel-hidden {
 </div>
 <span class="tab-topic">Sampling Theorem &amp; TDM</span>
 </div>
-<span class="tab-pill copy">3 Copy • 0 AI</span>
+<span class="tab-pill copy">3 Copy • 0 Using AI</span>
 </a>
 <a class="tab-btn" href="#panel-lab-9" id="tab-lab-9" onclick="switchLab(9); return false;">
 <div class="tab-content">
@@ -1750,7 +1791,7 @@ html.js .lab-panel.panel-hidden {
 </div>
 <span class="tab-topic">Pulse Code Modulation (PCM)</span>
 </div>
-<span class="tab-pill ai">2 Copy • 1 AI</span>
+<span class="tab-pill ai">2 Copy • 1 Using AI</span>
 </a>
 <a class="tab-btn" href="#panel-lab-10" id="tab-lab-10" onclick="switchLab(10); return false;">
 <div class="tab-content">
@@ -1759,7 +1800,7 @@ html.js .lab-panel.panel-hidden {
 </div>
 <span class="tab-topic">Line Coding Baseband</span>
 </div>
-<span class="tab-pill ai">2 Copy • 1 AI</span>
+<span class="tab-pill ai">2 Copy • 1 Using AI</span>
 </a>
 </nav>
 </aside>
@@ -1783,12 +1824,12 @@ html.js .lab-panel.panel-hidden {
 <span class="desc">All 10 student submissions audited</span>
 </div>
 <div class="stat-card">
-<span class="label">Copying / Shared Text Cases</span>
+<span class="label">👥 Group 1: Copy (From Students)</span>
 <span class="val green">2</span>
 <span class="desc">2 generic procedural phrasing cases (Exp. 4 Gain &amp; DC Offset, cleared as independent work)</span>
 </div>
 <div class="stat-card">
-<span class="label">AI Flagged Discussion</span>
+<span class="label">🤖 Group 2: Using AI</span>
 <span class="val warn">3</span>
 <span class="desc">Promsurin (75–80%), Phiriyapat (70%), Pitipat (60%)</span>
 </div>
@@ -1799,6 +1840,16 @@ html.js .lab-panel.panel-hidden {
 </div>
 </div>
 </header>
+<div class="integrity-guideline-banner">
+<div class="guideline-item">
+<span class="guideline-badge copy">👥 Group 1: Copy</span>
+<span><strong>Copy from other students:</strong> Two or more students sharing the exact same sentences, observations, or oscilloscope captures (highlighted yellow).</span>
+</div>
+<div class="guideline-item">
+<span class="guideline-badge ai">🤖 Group 2: Using AI</span>
+<span><strong>Using AI (ChatGPT / LLM):</strong> Generating answers with AI — whether copy-pasted in typed text OR copied from ChatGPT and written by hand. Both are 100% Using AI.</span>
+</div>
+</div>
 <!-- ======================================================== -->
 <!-- INTERACTIVE VISUAL EVIDENCE SECTION WITH GROUP FILTER    -->
 <!-- ======================================================== -->
@@ -1806,20 +1857,20 @@ html.js .lab-panel.panel-hidden {
 <div class="gallery-header">
 <div>
 <h2>📸 Visual Evidence Proofs (Actual PDF Screenshots)</h2>
-<p>Select a group button below to filter between Copying/Procedural Overlap and AI-Generated Text Evidence.</p>
+<p>Filter between Group 1: Copy (from other students) and Group 2: Using AI (ChatGPT/LLM — typed or handwritten).</p>
 </div>
 <!-- FILTER BUTTONS -->
 <div class="filter-bar" id="filterBar">
 <button class="filter-btn active" data-group="all" onclick="filterPanelGallery(this, 'all')">
-<span>Show All Images</span>
+<span>Show All Proofs</span>
 <span class="count-badge">5</span>
 </button>
 <button class="filter-btn" data-group="copy" onclick="filterPanelGallery(this, 'copy')">
-<span>👥 Group: Copying Evidence</span>
+<span>👥 Group 1: Copy (From Students)</span>
 <span class="count-badge">2</span>
 </button>
 <button class="filter-btn" data-group="ai" onclick="filterPanelGallery(this, 'ai')">
-<span>🤖 Group: AI-Use Evidence</span>
+<span>🤖 Group 2: Using AI</span>
 <span class="count-badge">3</span>
 </button>
 </div>
@@ -1968,8 +2019,8 @@ html.js .lab-panel.panel-hidden {
 <tr>
 <th>Student Name</th>
 <th>Student ID</th>
-<th>Copying Verdict</th>
-<th>AI Verdict</th>
+<th>👥 Group 1: Copy (From Students)</th>
+<th>🤖 Group 2: Using AI</th>
 <th>Provisional Score</th>
 <th>Key Observations</th>
 </tr>
@@ -2082,12 +2133,12 @@ html.js .lab-panel.panel-hidden {
 <span class="desc">9 submissions (Arisa absent)</span>
 </div>
 <div class="stat-card">
-<span class="label">Copying / Shared Text Cases</span>
+<span class="label">👥 Group 1: Copy (From Students)</span>
 <span class="val red">4</span>
 <span class="desc">High pair cluster across Exp 6-9</span>
 </div>
 <div class="stat-card">
-<span class="label">AI Use Cases</span>
+<span class="label">🤖 Group 2: Using AI</span>
 <span class="val red">1</span>
 <span class="desc">Confirmed advanced derivation (Promsurin)</span>
 </div>
@@ -2098,6 +2149,16 @@ html.js .lab-panel.panel-hidden {
 </div>
 </div>
 </header>
+<div class="integrity-guideline-banner">
+<div class="guideline-item">
+<span class="guideline-badge copy">👥 Group 1: Copy</span>
+<span><strong>Copy from other students:</strong> Two or more students sharing the exact same sentences, observations, or oscilloscope captures (highlighted yellow).</span>
+</div>
+<div class="guideline-item">
+<span class="guideline-badge ai">🤖 Group 2: Using AI</span>
+<span><strong>Using AI (ChatGPT / LLM):</strong> Generating answers with AI — whether copy-pasted in typed text OR copied from ChatGPT and written by hand. Both are 100% Using AI.</span>
+</div>
+</div>
 <!-- ======================================================== -->
 <!-- INTERACTIVE VISUAL EVIDENCE SECTION WITH GROUP FILTER    -->
 <!-- ======================================================== -->
@@ -2105,20 +2166,20 @@ html.js .lab-panel.panel-hidden {
 <div class="gallery-header">
 <div>
 <h2>📸 Visual Evidence Proofs (Actual PDF Screenshots)</h2>
-<p>Select a group button below to filter and view the evidence images for that specific case category.</p>
+<p>Filter between Group 1: Copy (from other students) and Group 2: Using AI (ChatGPT/LLM — typed or handwritten).</p>
 </div>
 <!-- FILTER BUTTONS -->
 <div class="filter-bar" id="filterBar">
 <button class="filter-btn active" data-group="all" onclick="filterPanelGallery(this, 'all')">
-<span>Show All Images</span>
+<span>Show All Proofs</span>
 <span class="count-badge">5</span>
 </button>
 <button class="filter-btn" data-group="copy" onclick="filterPanelGallery(this, 'copy')">
-<span>👥 Group: Copying Evidence</span>
+<span>👥 Group 1: Copy (From Students)</span>
 <span class="count-badge">4</span>
 </button>
 <button class="filter-btn" data-group="ai" onclick="filterPanelGallery(this, 'ai')">
-<span>🤖 Group: AI-Use Evidence</span>
+<span>🤖 Group 2: Using AI</span>
 <span class="count-badge">1</span>
 </button>
 </div>
@@ -2269,8 +2330,8 @@ html.js .lab-panel.panel-hidden {
 <tr>
 <th>Student Name</th>
 <th>Student ID</th>
-<th>Copying Verdict</th>
-<th>AI Verdict</th>
+<th>👥 Group 1: Copy (From Students)</th>
+<th>🤖 Group 2: Using AI</th>
 <th>Provisional Score</th>
 <th>Key Observations</th>
 </tr>
@@ -2375,12 +2436,12 @@ html.js .lab-panel.panel-hidden {
 <span class="desc">All 10 student submissions audited</span>
 </div>
 <div class="stat-card">
-<span class="label">Copying / Shared Text Cases</span>
+<span class="label">👥 Group 1: Copy (From Students)</span>
 <span class="val red">4</span>
 <span class="desc">High pair outliers on Exp 3, 5, 6</span>
 </div>
 <div class="stat-card">
-<span class="label">AI Use Cases</span>
+<span class="label">🤖 Group 2: Using AI</span>
 <span class="val red">1</span>
 <span class="desc">Mini-essay theory sections (Promsurin)</span>
 </div>
@@ -2391,6 +2452,16 @@ html.js .lab-panel.panel-hidden {
 </div>
 </div>
 </header>
+<div class="integrity-guideline-banner">
+<div class="guideline-item">
+<span class="guideline-badge copy">👥 Group 1: Copy</span>
+<span><strong>Copy from other students:</strong> Two or more students sharing the exact same sentences, observations, or oscilloscope captures (highlighted yellow).</span>
+</div>
+<div class="guideline-item">
+<span class="guideline-badge ai">🤖 Group 2: Using AI</span>
+<span><strong>Using AI (ChatGPT / LLM):</strong> Generating answers with AI — whether copy-pasted in typed text OR copied from ChatGPT and written by hand. Both are 100% Using AI.</span>
+</div>
+</div>
 <!-- ======================================================== -->
 <!-- INTERACTIVE VISUAL EVIDENCE SECTION WITH GROUP FILTER    -->
 <!-- ======================================================== -->
@@ -2398,20 +2469,20 @@ html.js .lab-panel.panel-hidden {
 <div class="gallery-header">
 <div>
 <h2>📸 Visual Evidence Proofs (Actual PDF Screenshots)</h2>
-<p>Select a group button below to filter and view the evidence images for that specific case category.</p>
+<p>Filter between Group 1: Copy (from other students) and Group 2: Using AI (ChatGPT/LLM — typed or handwritten).</p>
 </div>
 <!-- FILTER BUTTONS -->
 <div class="filter-bar" id="filterBar">
 <button class="filter-btn active" data-group="all" onclick="filterPanelGallery(this, 'all')">
-<span>Show All Images</span>
+<span>Show All Proofs</span>
 <span class="count-badge">5</span>
 </button>
 <button class="filter-btn" data-group="copy" onclick="filterPanelGallery(this, 'copy')">
-<span>👥 Group: Copying Evidence</span>
+<span>👥 Group 1: Copy (From Students)</span>
 <span class="count-badge">4</span>
 </button>
 <button class="filter-btn" data-group="ai" onclick="filterPanelGallery(this, 'ai')">
-<span>🤖 Group: AI-Use Evidence</span>
+<span>🤖 Group 2: Using AI</span>
 <span class="count-badge">1</span>
 </button>
 </div>
@@ -2562,8 +2633,8 @@ html.js .lab-panel.panel-hidden {
 <tr>
 <th>Student Name</th>
 <th>Student ID</th>
-<th>Copying Verdict</th>
-<th>AI Verdict</th>
+<th>👥 Group 1: Copy (From Students)</th>
+<th>🤖 Group 2: Using AI</th>
 <th>Provisional Score</th>
 <th>Key Observations</th>
 </tr>
@@ -2676,12 +2747,12 @@ html.js .lab-panel.panel-hidden {
 <span class="desc">All 10 student submissions audited</span>
 </div>
 <div class="stat-card">
-<span class="label">Copying / Shared Text Cases</span>
+<span class="label">👥 Group 1: Copy (From Students)</span>
 <span class="val blue">0</span>
 <span class="desc">0 copying cases (template false positive cleared)</span>
 </div>
 <div class="stat-card">
-<span class="label">AI Use Cases</span>
+<span class="label">🤖 Group 2: Using AI</span>
 <span class="val red">1</span>
 <span class="desc">Advanced unprompted theory (Promsurin)</span>
 </div>
@@ -2692,6 +2763,16 @@ html.js .lab-panel.panel-hidden {
 </div>
 </div>
 </header>
+<div class="integrity-guideline-banner">
+<div class="guideline-item">
+<span class="guideline-badge copy">👥 Group 1: Copy</span>
+<span><strong>Copy from other students:</strong> Two or more students sharing the exact same sentences, observations, or oscilloscope captures (highlighted yellow).</span>
+</div>
+<div class="guideline-item">
+<span class="guideline-badge ai">🤖 Group 2: Using AI</span>
+<span><strong>Using AI (ChatGPT / LLM):</strong> Generating answers with AI — whether copy-pasted in typed text OR copied from ChatGPT and written by hand. Both are 100% Using AI.</span>
+</div>
+</div>
 <!-- ======================================================== -->
 <!-- INTERACTIVE VISUAL EVIDENCE SECTION WITH GROUP FILTER    -->
 <!-- ======================================================== -->
@@ -2699,20 +2780,20 @@ html.js .lab-panel.panel-hidden {
 <div class="gallery-header">
 <div>
 <h2>📸 Visual Evidence Proofs (Actual PDF Screenshots)</h2>
-<p>Select a group button below to filter and view the evidence images for that specific case category.</p>
+<p>Filter between Group 1: Copy (from other students) and Group 2: Using AI (ChatGPT/LLM — typed or handwritten).</p>
 </div>
 <!-- FILTER BUTTONS -->
 <div class="filter-bar" id="filterBar">
 <button class="filter-btn active" data-group="all" onclick="filterPanelGallery(this, 'all')">
-<span>Show All Images</span>
+<span>Show All Proofs</span>
 <span class="count-badge">1</span>
 </button>
 <button class="filter-btn" data-group="copy" onclick="filterPanelGallery(this, 'copy')">
-<span>👥 Group: Copying Evidence</span>
+<span>👥 Group 1: Copy (From Students)</span>
 <span class="count-badge">0</span>
 </button>
 <button class="filter-btn" data-group="ai" onclick="filterPanelGallery(this, 'ai')">
-<span>🤖 Group: AI-Use Evidence</span>
+<span>🤖 Group 2: Using AI</span>
 <span class="count-badge">1</span>
 </button>
 </div>
@@ -2759,8 +2840,8 @@ html.js .lab-panel.panel-hidden {
 <tr>
 <th>Student Name</th>
 <th>Student ID</th>
-<th>Copying Verdict</th>
-<th>AI Verdict</th>
+<th>👥 Group 1: Copy (From Students)</th>
+<th>🤖 Group 2: Using AI</th>
 <th>Provisional Score</th>
 <th>Key Observations</th>
 </tr>
@@ -2873,12 +2954,12 @@ html.js .lab-panel.panel-hidden {
 <span class="desc">All 10 student submissions audited</span>
 </div>
 <div class="stat-card">
-<span class="label">Copying / Shared Text Cases</span>
+<span class="label">👥 Group 1: Copy (From Students)</span>
 <span class="val blue">3</span>
 <span class="desc">Demodulation &amp; overmodulation text overlap</span>
 </div>
 <div class="stat-card">
-<span class="label">AI Use Cases</span>
+<span class="label">🤖 Group 2: Using AI</span>
 <span class="val red">1</span>
 <span class="desc">Advanced unprompted derivations (Promsurin)</span>
 </div>
@@ -2889,6 +2970,16 @@ html.js .lab-panel.panel-hidden {
 </div>
 </div>
 </header>
+<div class="integrity-guideline-banner">
+<div class="guideline-item">
+<span class="guideline-badge copy">👥 Group 1: Copy</span>
+<span><strong>Copy from other students:</strong> Two or more students sharing the exact same sentences, observations, or oscilloscope captures (highlighted yellow).</span>
+</div>
+<div class="guideline-item">
+<span class="guideline-badge ai">🤖 Group 2: Using AI</span>
+<span><strong>Using AI (ChatGPT / LLM):</strong> Generating answers with AI — whether copy-pasted in typed text OR copied from ChatGPT and written by hand. Both are 100% Using AI.</span>
+</div>
+</div>
 <!-- ======================================================== -->
 <!-- INTERACTIVE VISUAL EVIDENCE SECTION WITH GROUP FILTER    -->
 <!-- ======================================================== -->
@@ -2896,20 +2987,20 @@ html.js .lab-panel.panel-hidden {
 <div class="gallery-header">
 <div>
 <h2>📸 Visual Evidence Proofs (Actual PDF Screenshots)</h2>
-<p>Select a group button below to filter and view the evidence images for that specific case category.</p>
+<p>Filter between Group 1: Copy (from other students) and Group 2: Using AI (ChatGPT/LLM — typed or handwritten).</p>
 </div>
 <!-- FILTER BUTTONS -->
 <div class="filter-bar" id="filterBar">
 <button class="filter-btn active" data-group="all" onclick="filterPanelGallery(this, 'all')">
-<span>Show All Images</span>
+<span>Show All Proofs</span>
 <span class="count-badge">4</span>
 </button>
 <button class="filter-btn" data-group="copy" onclick="filterPanelGallery(this, 'copy')">
-<span>👥 Group: Copying Evidence</span>
+<span>👥 Group 1: Copy (From Students)</span>
 <span class="count-badge">3</span>
 </button>
 <button class="filter-btn" data-group="ai" onclick="filterPanelGallery(this, 'ai')">
-<span>🤖 Group: AI-Use Evidence</span>
+<span>🤖 Group 2: Using AI</span>
 <span class="count-badge">1</span>
 </button>
 </div>
@@ -3034,8 +3125,8 @@ html.js .lab-panel.panel-hidden {
 <tr>
 <th>Student Name</th>
 <th>Student ID</th>
-<th>Copying Verdict</th>
-<th>AI Verdict</th>
+<th>👥 Group 1: Copy (From Students)</th>
+<th>🤖 Group 2: Using AI</th>
 <th>Provisional Score</th>
 <th>Key Observations</th>
 </tr>
@@ -3148,12 +3239,12 @@ html.js .lab-panel.panel-hidden {
 <span class="desc">All student submissions re-verified</span>
 </div>
 <div class="stat-card">
-<span class="label">Copying / Shared Text Cases</span>
+<span class="label">👥 Group 1: Copy (From Students)</span>
 <span class="val blue">3</span>
 <span class="desc">Shared Carson definitions (Exp 5)</span>
 </div>
 <div class="stat-card">
-<span class="label">AI Use Cases</span>
+<span class="label">🤖 Group 2: Using AI</span>
 <span class="val red">1</span>
 <span class="desc">Promsurin (Page 10 conversational leak)</span>
 </div>
@@ -3164,6 +3255,16 @@ html.js .lab-panel.panel-hidden {
 </div>
 </div>
 </header>
+<div class="integrity-guideline-banner">
+<div class="guideline-item">
+<span class="guideline-badge copy">👥 Group 1: Copy</span>
+<span><strong>Copy from other students:</strong> Two or more students sharing the exact same sentences, observations, or oscilloscope captures (highlighted yellow).</span>
+</div>
+<div class="guideline-item">
+<span class="guideline-badge ai">🤖 Group 2: Using AI</span>
+<span><strong>Using AI (ChatGPT / LLM):</strong> Generating answers with AI — whether copy-pasted in typed text OR copied from ChatGPT and written by hand. Both are 100% Using AI.</span>
+</div>
+</div>
 <!-- ======================================================== -->
 <!-- INTERACTIVE VISUAL EVIDENCE SECTION WITH GROUP FILTER    -->
 <!-- ======================================================== -->
@@ -3171,20 +3272,20 @@ html.js .lab-panel.panel-hidden {
 <div class="gallery-header">
 <div>
 <h2>📸 Visual Evidence Proofs (Actual PDF Screenshots)</h2>
-<p>Select a group button below to filter and view only the images for that specific case category.</p>
+<p>Filter between Group 1: Copy (from other students) and Group 2: Using AI (ChatGPT/LLM — typed or handwritten).</p>
 </div>
 <!-- FILTER BUTTONS -->
 <div class="filter-bar" id="filterBar">
 <button class="filter-btn active" data-group="all" onclick="filterPanelGallery(this, 'all')">
-<span>Show All Images</span>
+<span>Show All Proofs</span>
 <span class="count-badge">4</span>
 </button>
 <button class="filter-btn" data-group="copy" onclick="filterPanelGallery(this, 'copy')">
-<span>👥 Group: Copying Evidence</span>
+<span>👥 Group 1: Copy (From Students)</span>
 <span class="count-badge">3</span>
 </button>
 <button class="filter-btn" data-group="ai" onclick="filterPanelGallery(this, 'ai')">
-<span>🤖 Group: AI-Use Evidence</span>
+<span>🤖 Group 2: Using AI</span>
 <span class="count-badge">1</span>
 </button>
 </div>
@@ -3297,8 +3398,8 @@ html.js .lab-panel.panel-hidden {
 <tr>
 <th>Student Name</th>
 <th>Student ID</th>
-<th>Copying Verdict</th>
-<th>AI Verdict</th>
+<th>👥 Group 1: Copy (From Students)</th>
+<th>🤖 Group 2: Using AI</th>
 <th>Provisional Score</th>
 <th>Summary Note</th>
 </tr>
@@ -3411,12 +3512,12 @@ html.js .lab-panel.panel-hidden {
 <span class="desc">All student submissions re-verified</span>
 </div>
 <div class="stat-card">
-<span class="label">Copying / Shared Text Cases</span>
+<span class="label">👥 Group 1: Copy (From Students)</span>
 <span class="val blue">2</span>
 <span class="desc">Shared DSBFC definitions (Exp 3)</span>
 </div>
 <div class="stat-card">
-<span class="label">AI Use Cases</span>
+<span class="label">🤖 Group 2: Using AI</span>
 <span class="val green">0</span>
 <span class="desc">Zero AI chatbot text detected</span>
 </div>
@@ -3427,6 +3528,16 @@ html.js .lab-panel.panel-hidden {
 </div>
 </div>
 </header>
+<div class="integrity-guideline-banner">
+<div class="guideline-item">
+<span class="guideline-badge copy">👥 Group 1: Copy</span>
+<span><strong>Copy from other students:</strong> Two or more students sharing the exact same sentences, observations, or oscilloscope captures (highlighted yellow).</span>
+</div>
+<div class="guideline-item">
+<span class="guideline-badge ai">🤖 Group 2: Using AI</span>
+<span><strong>Using AI (ChatGPT / LLM):</strong> Generating answers with AI — whether copy-pasted in typed text OR copied from ChatGPT and written by hand. Both are 100% Using AI.</span>
+</div>
+</div>
 <!-- ======================================================== -->
 <!-- INTERACTIVE VISUAL EVIDENCE SECTION WITH GROUP FILTER    -->
 <!-- ======================================================== -->
@@ -3434,16 +3545,16 @@ html.js .lab-panel.panel-hidden {
 <div class="gallery-header">
 <div>
 <h2>📸 Visual Evidence Proofs (Actual PDF Screenshots)</h2>
-<p>Select a group button below to filter and view the evidence images for that specific case category.</p>
+<p>Filter between Group 1: Copy (from other students) and Group 2: Using AI (ChatGPT/LLM — typed or handwritten).</p>
 </div>
 <!-- FILTER BUTTONS -->
 <div class="filter-bar" id="filterBar">
 <button class="filter-btn active" data-group="all" onclick="filterPanelGallery(this, 'all')">
-<span>Show All Images</span>
+<span>Show All Proofs</span>
 <span class="count-badge">2</span>
 </button>
 <button class="filter-btn" data-group="copy" onclick="filterPanelGallery(this, 'copy')">
-<span>👥 Group: Copying Evidence</span>
+<span>👥 Group 1: Copy (From Students)</span>
 <span class="count-badge">2</span>
 </button>
 </div>
@@ -3511,8 +3622,8 @@ html.js .lab-panel.panel-hidden {
 <tr>
 <th>Student Name</th>
 <th>Student ID</th>
-<th>Copying Verdict</th>
-<th>AI Verdict</th>
+<th>👥 Group 1: Copy (From Students)</th>
+<th>🤖 Group 2: Using AI</th>
 <th>Provisional Score</th>
 <th>Summary Note</th>
 </tr>
@@ -3625,12 +3736,12 @@ html.js .lab-panel.panel-hidden {
 <span class="desc">All student submissions re-verified</span>
 </div>
 <div class="stat-card">
-<span class="label">Copying / Shared Text Cases</span>
+<span class="label">👥 Group 1: Copy (From Students)</span>
 <span class="val blue">3</span>
 <span class="desc">Shared Nyquist &amp; LPF definitions</span>
 </div>
 <div class="stat-card">
-<span class="label">AI Use Cases</span>
+<span class="label">🤖 Group 2: Using AI</span>
 <span class="val green">0</span>
 <span class="desc">Zero AI chatbot text detected</span>
 </div>
@@ -3641,6 +3752,16 @@ html.js .lab-panel.panel-hidden {
 </div>
 </div>
 </header>
+<div class="integrity-guideline-banner">
+<div class="guideline-item">
+<span class="guideline-badge copy">👥 Group 1: Copy</span>
+<span><strong>Copy from other students:</strong> Two or more students sharing the exact same sentences, observations, or oscilloscope captures (highlighted yellow).</span>
+</div>
+<div class="guideline-item">
+<span class="guideline-badge ai">🤖 Group 2: Using AI</span>
+<span><strong>Using AI (ChatGPT / LLM):</strong> Generating answers with AI — whether copy-pasted in typed text OR copied from ChatGPT and written by hand. Both are 100% Using AI.</span>
+</div>
+</div>
 <!-- ======================================================== -->
 <!-- INTERACTIVE VISUAL EVIDENCE SECTION WITH GROUP FILTER    -->
 <!-- ======================================================== -->
@@ -3648,16 +3769,16 @@ html.js .lab-panel.panel-hidden {
 <div class="gallery-header">
 <div>
 <h2>📸 Visual Evidence Proofs (Actual PDF Screenshots)</h2>
-<p>Select a group button below to filter and view the evidence images for that specific case category.</p>
+<p>Filter between Group 1: Copy (from other students) and Group 2: Using AI (ChatGPT/LLM — typed or handwritten).</p>
 </div>
 <!-- FILTER BUTTONS -->
 <div class="filter-bar" id="filterBar">
 <button class="filter-btn active" data-group="all" onclick="filterPanelGallery(this, 'all')">
-<span>Show All Images</span>
+<span>Show All Proofs</span>
 <span class="count-badge">3</span>
 </button>
 <button class="filter-btn" data-group="copy" onclick="filterPanelGallery(this, 'copy')">
-<span>👥 Group: Copying Evidence</span>
+<span>👥 Group 1: Copy (From Students)</span>
 <span class="count-badge">3</span>
 </button>
 </div>
@@ -3748,8 +3869,8 @@ html.js .lab-panel.panel-hidden {
 <tr>
 <th>Student Name</th>
 <th>Student ID</th>
-<th>Copying Verdict</th>
-<th>AI Verdict</th>
+<th>👥 Group 1: Copy (From Students)</th>
+<th>🤖 Group 2: Using AI</th>
 <th>Provisional Score</th>
 <th>Summary Note</th>
 </tr>
@@ -3862,12 +3983,12 @@ html.js .lab-panel.panel-hidden {
 <span class="desc">All student submissions re-verified</span>
 </div>
 <div class="stat-card">
-<span class="label">Copying / Shared Text Cases</span>
+<span class="label">👥 Group 1: Copy (From Students)</span>
 <span class="val blue">2</span>
 <span class="desc">Exp 1 DC setup &amp; quantization overlap</span>
 </div>
 <div class="stat-card">
-<span class="label">AI Use Cases</span>
+<span class="label">🤖 Group 2: Using AI</span>
 <span class="val danger">1</span>
 <span class="desc">Promsurin (Pages 4, 6, 7, 9 textbook essays)</span>
 </div>
@@ -3878,6 +3999,16 @@ html.js .lab-panel.panel-hidden {
 </div>
 </div>
 </header>
+<div class="integrity-guideline-banner">
+<div class="guideline-item">
+<span class="guideline-badge copy">👥 Group 1: Copy</span>
+<span><strong>Copy from other students:</strong> Two or more students sharing the exact same sentences, observations, or oscilloscope captures (highlighted yellow).</span>
+</div>
+<div class="guideline-item">
+<span class="guideline-badge ai">🤖 Group 2: Using AI</span>
+<span><strong>Using AI (ChatGPT / LLM):</strong> Generating answers with AI — whether copy-pasted in typed text OR copied from ChatGPT and written by hand. Both are 100% Using AI.</span>
+</div>
+</div>
 <!-- ======================================================== -->
 <!-- INTERACTIVE VISUAL EVIDENCE SECTION WITH GROUP FILTER    -->
 <!-- ======================================================== -->
@@ -3885,20 +4016,20 @@ html.js .lab-panel.panel-hidden {
 <div class="gallery-header">
 <div>
 <h2>📸 Visual Evidence Proofs (Actual PDF Screenshots)</h2>
-<p>Select a group button below to filter and view the evidence images for that specific case category.</p>
+<p>Filter between Group 1: Copy (from other students) and Group 2: Using AI (ChatGPT/LLM — typed or handwritten).</p>
 </div>
 <!-- FILTER BUTTONS -->
 <div class="filter-bar" id="filterBar">
 <button class="filter-btn active" data-group="all" onclick="filterPanelGallery(this, 'all')">
-<span>Show All Images</span>
+<span>Show All Proofs</span>
 <span class="count-badge">3</span>
 </button>
 <button class="filter-btn" data-group="copy" onclick="filterPanelGallery(this, 'copy')">
-<span>👥 Group: Copying Evidence</span>
+<span>👥 Group 1: Copy (From Students)</span>
 <span class="count-badge">2</span>
 </button>
 <button class="filter-btn" data-group="ai" onclick="filterPanelGallery(this, 'ai')">
-<span>🤖 Group: AI-Use Evidence</span>
+<span>🤖 Group 2: Using AI</span>
 <span class="count-badge">1</span>
 </button>
 </div>
@@ -3998,8 +4129,8 @@ html.js .lab-panel.panel-hidden {
 <tr>
 <th>Student Name</th>
 <th>Student ID</th>
-<th>Copying Verdict</th>
-<th>AI Verdict</th>
+<th>👥 Group 1: Copy (From Students)</th>
+<th>🤖 Group 2: Using AI</th>
 <th>Provisional Score</th>
 <th>Key Observations</th>
 </tr>
@@ -4112,12 +4243,12 @@ html.js .lab-panel.panel-hidden {
 <span class="desc">All student submissions re-verified</span>
 </div>
 <div class="stat-card">
-<span class="label">Copying / Paraphrase Cases</span>
+<span class="label">👥 Group 1: Copy (From Students)</span>
 <span class="val red">2</span>
 <span class="desc">1 high paraphrase match + 1 procedural overlap case</span>
 </div>
 <div class="stat-card">
-<span class="label">AI Use Cases</span>
+<span class="label">🤖 Group 2: Using AI</span>
 <span class="val danger">1</span>
 <span class="desc">Promsurin (Page 4 PRBS Sync derivations &amp; vector bypass)</span>
 </div>
@@ -4128,6 +4259,16 @@ html.js .lab-panel.panel-hidden {
 </div>
 </div>
 </header>
+<div class="integrity-guideline-banner">
+<div class="guideline-item">
+<span class="guideline-badge copy">👥 Group 1: Copy</span>
+<span><strong>Copy from other students:</strong> Two or more students sharing the exact same sentences, observations, or oscilloscope captures (highlighted yellow).</span>
+</div>
+<div class="guideline-item">
+<span class="guideline-badge ai">🤖 Group 2: Using AI</span>
+<span><strong>Using AI (ChatGPT / LLM):</strong> Generating answers with AI — whether copy-pasted in typed text OR copied from ChatGPT and written by hand. Both are 100% Using AI.</span>
+</div>
+</div>
 <!-- ======================================================== -->
 <!-- INTERACTIVE VISUAL EVIDENCE SECTION WITH GROUP FILTER    -->
 <!-- ======================================================== -->
@@ -4135,20 +4276,20 @@ html.js .lab-panel.panel-hidden {
 <div class="gallery-header">
 <div>
 <h2>📸 Visual Evidence Proofs (Actual PDF Screenshots)</h2>
-<p>Select a group button below to filter and view the evidence images for that specific case category.</p>
+<p>Filter between Group 1: Copy (from other students) and Group 2: Using AI (ChatGPT/LLM — typed or handwritten).</p>
 </div>
 <!-- FILTER BUTTONS -->
 <div class="filter-bar" id="filterBar">
 <button class="filter-btn active" data-group="all" onclick="filterPanelGallery(this, 'all')">
-<span>Show All Images</span>
+<span>Show All Proofs</span>
 <span class="count-badge">3</span>
 </button>
 <button class="filter-btn" data-group="copy" onclick="filterPanelGallery(this, 'copy')">
-<span>👥 Group: Copying &amp; Paraphrase</span>
+<span>👥 Group 1: Copy (From Students)</span>
 <span class="count-badge">2</span>
 </button>
 <button class="filter-btn" data-group="ai" onclick="filterPanelGallery(this, 'ai')">
-<span>🤖 Group: AI-Use Evidence</span>
+<span>🤖 Group 2: Using AI</span>
 <span class="count-badge">1</span>
 </button>
 </div>
@@ -4248,8 +4389,8 @@ html.js .lab-panel.panel-hidden {
 <tr>
 <th>Student Name</th>
 <th>Student ID</th>
-<th>Copying Verdict</th>
-<th>AI Verdict</th>
+<th>👥 Group 1: Copy (From Students)</th>
+<th>🤖 Group 2: Using AI</th>
 <th>Provisional Score</th>
 <th>Key Observations</th>
 </tr>
@@ -4345,13 +4486,23 @@ html.js .lab-panel.panel-hidden {
 </section>
 <section class="lab-panel panel-hidden" id="panel-profiles">
 <div class="profiles-container">
-<div class="dashboard-header" style="margin-bottom: 24px;">
+<div class="dashboard-header" style="margin-bottom: 20px;">
 <div class="header-content">
 <span class="sub-title">EN253800 Telecommunication Engineering Lab I · Behavioral Profiling</span>
 <h2>Student Habits &amp; Academic Integrity Profiles</h2>
 <p style="color: var(--text-secondary); margin: 6px 0 0; font-size: 0.95rem;">
         Longitudinal audit across 10 laboratories tracking individual AI generation habits, peer copying patterns, frequent partner clusters, and predictive risk for future labs.
       </p>
+</div>
+</div>
+<div class="integrity-guideline-banner">
+<div class="guideline-item">
+<span class="guideline-badge copy">👥 Group 1: Copy</span>
+<span><strong>Copy from other students:</strong> Two or more students sharing the exact same sentences, observations, or oscilloscope captures (highlighted yellow).</span>
+</div>
+<div class="guideline-item">
+<span class="guideline-badge ai">🤖 Group 2: Using AI</span>
+<span><strong>Using AI (ChatGPT / LLM):</strong> Generating answers with AI — whether copy-pasted in typed text OR copied from ChatGPT and written by hand. Both are 100% Using AI.</span>
 </div>
 </div>
 <div class="student-profiles-list">
@@ -4370,7 +4521,7 @@ html.js .lab-panel.panel-hidden {
 <div class="student-grid">
 <!-- AI Habit Column -->
 <div class="habit-box">
-<h4>🤖 AI Usage Habit &amp; Profile</h4>
+<h4>🤖 Group 2: Using AI (ChatGPT / LLM)</h4>
 <span class="habit-meter meter-high">AI Risk: Very High (95% in Typed Labs)</span>
 <p style="font-size: 0.88rem; line-height: 1.5; color: var(--text-secondary); margin: 0 0 12px;">
             Chronic and habitual AI user across 8 out of 10 labs. When typing, he almost always prompts ChatGPT to generate multi-paragraph theoretical essays and graduate-level math derivations (Gilbert cells, Bessel expansions, PRBS polynomials) to compensate for missing oscilloscope photos. Left a direct conversational leak on Lab 6 Page 10.
@@ -4392,7 +4543,7 @@ html.js .lab-panel.panel-hidden {
 </div>
 <!-- Copying Habit Column -->
 <div class="habit-box">
-<h4>👥 Peer Collaboration &amp; Copying Habit</h4>
+<h4>👥 Group 1: Copy (From Other Students)</h4>
 <span class="habit-meter meter-low">Copying Risk: Low (Solo AI Generator)</span>
 <div style="font-size: 0.82rem; margin-bottom: 8px; color: var(--primary); font-weight: 600;">
             Frequent Partners: None (Works Solo with LLMs)
@@ -4431,7 +4582,7 @@ html.js .lab-panel.panel-hidden {
 <div class="student-grid">
 <!-- AI Habit Column -->
 <div class="habit-box">
-<h4>🤖 AI Usage Habit &amp; Profile</h4>
+<h4>🤖 Group 2: Using AI (ChatGPT / LLM)</h4>
 <span class="habit-meter meter-low">AI Risk: Low (Authentic Human Stylus)</span>
 <p style="font-size: 0.88rem; line-height: 1.5; color: var(--text-secondary); margin: 0 0 12px;">
             Zero evidence of synthetic AI text generation. Her handwriting and English phrasing reflect authentic, natural Thai-English sentence structures with typical grammatical imperfections.
@@ -4440,7 +4591,7 @@ html.js .lab-panel.panel-hidden {
 </div>
 <!-- Copying Habit Column -->
 <div class="habit-box">
-<h4>👥 Peer Collaboration &amp; Copying Habit</h4>
+<h4>👥 Group 1: Copy (From Other Students)</h4>
 <span class="habit-meter meter-high">Copying Risk: Very High (90% Future Peer Overlap)</span>
 <div style="font-size: 0.82rem; margin-bottom: 8px; color: var(--primary); font-weight: 600;">
             Frequent Partners: Supanun Jantharachit (Primary), Phakkhaphorn Somrit (Lab 2), Phiriyapat Chaywichai (Lab 10)
@@ -4487,7 +4638,7 @@ html.js .lab-panel.panel-hidden {
 <div class="student-grid">
 <!-- AI Habit Column -->
 <div class="habit-box">
-<h4>🤖 AI Usage Habit &amp; Profile</h4>
+<h4>🤖 Group 2: Using AI (ChatGPT / LLM)</h4>
 <span class="habit-meter meter-low">AI Risk: Low (Authentic Human Stylus)</span>
 <p style="font-size: 0.88rem; line-height: 1.5; color: var(--text-secondary); margin: 0 0 12px;">
             Zero synthetic AI generation. Produces clean oscilloscope traces and authentic handwritten discussion notes.
@@ -4496,7 +4647,7 @@ html.js .lab-panel.panel-hidden {
 </div>
 <!-- Copying Habit Column -->
 <div class="habit-box">
-<h4>👥 Peer Collaboration &amp; Copying Habit</h4>
+<h4>👥 Group 1: Copy (From Other Students)</h4>
 <span class="habit-meter meter-high">Copying Risk: Very High (90% Future Peer Overlap)</span>
 <div style="font-size: 0.82rem; margin-bottom: 8px; color: var(--primary); font-weight: 600;">
             Frequent Partners: Puntitua Sirikulthawach (Inseparable Partner), Kwantida Saenwa (Procedural Definitions)
@@ -4539,7 +4690,7 @@ html.js .lab-panel.panel-hidden {
 <div class="student-grid">
 <!-- AI Habit Column -->
 <div class="habit-box">
-<h4>🤖 AI Usage Habit &amp; Profile</h4>
+<h4>🤖 Group 2: Using AI (ChatGPT / LLM)</h4>
 <span class="habit-meter meter-low">AI Risk: Very Low (Authentic Engineering Rigor)</span>
 <p style="font-size: 0.88rem; line-height: 1.5; color: var(--text-secondary); margin: 0 0 12px;">
             No AI text generation. Her reports are exceptionally thorough and grounded in exact physical measurements ($736\text{ kHz}$ noise peaks, measured oscilloscope voltage divisions, custom spectrum plots). Consistently scores 8.5–9.5/10.
@@ -4548,7 +4699,7 @@ html.js .lab-panel.panel-hidden {
 </div>
 <!-- Copying Habit Column -->
 <div class="habit-box">
-<h4>👥 Peer Collaboration &amp; Copying Habit</h4>
+<h4>👥 Group 1: Copy (From Other Students)</h4>
 <span class="habit-meter meter-high">Copying Risk: Very Low (Solitary High-Effort Worker)</span>
 <div style="font-size: 0.82rem; margin-bottom: 8px; color: var(--primary); font-weight: 600;">
             Frequent Partners: None (Independent)
@@ -4583,7 +4734,7 @@ html.js .lab-panel.panel-hidden {
 <div class="student-grid">
 <!-- AI Habit Column -->
 <div class="habit-box">
-<h4>🤖 AI Usage Habit &amp; Profile</h4>
+<h4>🤖 Group 2: Using AI (ChatGPT / LLM)</h4>
 <span class="habit-meter meter-low">AI Risk: Zero (Physical Handwriting / Photos)</span>
 <p style="font-size: 0.88rem; line-height: 1.5; color: var(--text-secondary); margin: 0 0 12px;">
             Zero AI usage across all 10 labs. Every page is hand-annotated with actual physical ballpoint ink over printed paper, accompanied by camera snapshots of hardware oscilloscopes.
@@ -4592,7 +4743,7 @@ html.js .lab-panel.panel-hidden {
 </div>
 <!-- Copying Habit Column -->
 <div class="habit-box">
-<h4>👥 Peer Collaboration &amp; Copying Habit</h4>
+<h4>👥 Group 1: Copy (From Other Students)</h4>
 <span class="habit-meter meter-med">Copying Risk: Low to Moderate (Isolated Past Incident)</span>
 <div style="font-size: 0.82rem; margin-bottom: 8px; color: var(--primary); font-weight: 600;">
             Frequent Partners: Puntitua Sirikulthawach (Lab 2 only)
@@ -4631,7 +4782,7 @@ html.js .lab-panel.panel-hidden {
 <div class="student-grid">
 <!-- AI Habit Column -->
 <div class="habit-box">
-<h4>🤖 AI Usage Habit &amp; Profile</h4>
+<h4>🤖 Group 2: Using AI (ChatGPT / LLM)</h4>
 <span class="habit-meter meter-med">AI Risk: Moderate (Plausible AI for Standard Definitions)</span>
 <p style="font-size: 0.88rem; line-height: 1.5; color: var(--text-secondary); margin: 0 0 12px;">
             Writes clean, concise textbook definitions. Plausible that she consults LLMs or online glossaries for structured definition summaries (e.g. Carson's rule, Nyquist criterion), but never injects synthetic essays.
@@ -4640,7 +4791,7 @@ html.js .lab-panel.panel-hidden {
 </div>
 <!-- Copying Habit Column -->
 <div class="habit-box">
-<h4>👥 Peer Collaboration &amp; Copying Habit</h4>
+<h4>👥 Group 1: Copy (From Other Students)</h4>
 <span class="habit-meter meter-med">Copying Risk: Moderate (Shares Procedural Definitions)</span>
 <div style="font-size: 0.82rem; margin-bottom: 8px; color: var(--primary); font-weight: 600;">
             Frequent Partners: Supanun Jantharachit, Puntitua Sirikulthawach
@@ -4679,7 +4830,7 @@ html.js .lab-panel.panel-hidden {
 <div class="student-grid">
 <!-- AI Habit Column -->
 <div class="habit-box">
-<h4>🤖 AI Usage Habit &amp; Profile</h4>
+<h4>🤖 Group 2: Using AI (ChatGPT / LLM)</h4>
 <span class="habit-meter meter-med">AI Risk: Moderate in Lab 1 (Low in Labs 2–10)</span>
 <p style="font-size: 0.88rem; line-height: 1.5; color: var(--text-secondary); margin: 0 0 12px;">
             Flagged in Lab 1 for rigid formulaic templates ('This proves that...') and zero cited numbers. In subsequent labs, wrote brief, direct human observations.
@@ -4688,7 +4839,7 @@ html.js .lab-panel.panel-hidden {
 </div>
 <!-- Copying Habit Column -->
 <div class="habit-box">
-<h4>👥 Peer Collaboration &amp; Copying Habit</h4>
+<h4>👥 Group 1: Copy (From Other Students)</h4>
 <span class="habit-meter meter-med">Copying Risk: Moderate (Occasional Bench Benchmarking)</span>
 <div style="font-size: 0.82rem; margin-bottom: 8px; color: var(--primary); font-weight: 600;">
             Frequent Partners: Puntitua Sirikulthawach (Lab 1 bench, Lab 10 line coding)
@@ -4727,7 +4878,7 @@ html.js .lab-panel.panel-hidden {
 <div class="student-grid">
 <!-- AI Habit Column -->
 <div class="habit-box">
-<h4>🤖 AI Usage Habit &amp; Profile</h4>
+<h4>🤖 Group 2: Using AI (ChatGPT / LLM)</h4>
 <span class="habit-meter meter-low">AI Risk: Low (Human Conceptual Error)</span>
 <p style="font-size: 0.88rem; line-height: 1.5; color: var(--text-secondary); margin: 0 0 12px;">
             Flagged in Lab 1 for claiming the Buffer Amp inverted the signal; audited as a student conceptual error rather than synthetic AI generation. Clean across Labs 2–10.
@@ -4736,7 +4887,7 @@ html.js .lab-panel.panel-hidden {
 </div>
 <!-- Copying Habit Column -->
 <div class="habit-box">
-<h4>👥 Peer Collaboration &amp; Copying Habit</h4>
+<h4>👥 Group 1: Copy (From Other Students)</h4>
 <span class="habit-meter meter-low">Copying Risk: Low (Occasional Bench Shared Setup)</span>
 <div style="font-size: 0.82rem; margin-bottom: 8px; color: var(--primary); font-weight: 600;">
             Frequent Partners: Paphadanittha Photoingna (Lab 3 bench partner)
@@ -4775,7 +4926,7 @@ html.js .lab-panel.panel-hidden {
 <div class="student-grid">
 <!-- AI Habit Column -->
 <div class="habit-box">
-<h4>🤖 AI Usage Habit &amp; Profile</h4>
+<h4>🤖 Group 2: Using AI (ChatGPT / LLM)</h4>
 <span class="habit-meter meter-low">AI Risk: Zero (Authentic Human Handwriting)</span>
 <p style="font-size: 0.88rem; line-height: 1.5; color: var(--text-secondary); margin: 0 0 12px;">
             Zero AI usage across all 10 labs. Handwriting is authentic, personal, and completely free of LLM vocabulary.
@@ -4784,7 +4935,7 @@ html.js .lab-panel.panel-hidden {
 </div>
 <!-- Copying Habit Column -->
 <div class="habit-box">
-<h4>👥 Peer Collaboration &amp; Copying Habit</h4>
+<h4>👥 Group 1: Copy (From Other Students)</h4>
 <span class="habit-meter meter-low">Copying Risk: Low (Minor Bench Hardware Sharing)</span>
 <div style="font-size: 0.82rem; margin-bottom: 8px; color: var(--primary); font-weight: 600;">
             Frequent Partners: Puntitua Sirikulthawach (Lab 1 bench), Pitipat Pairam (Lab 3 bench)
@@ -4819,7 +4970,7 @@ html.js .lab-panel.panel-hidden {
 <div class="student-grid">
 <!-- AI Habit Column -->
 <div class="habit-box">
-<h4>🤖 AI Usage Habit &amp; Profile</h4>
+<h4>🤖 Group 2: Using AI (ChatGPT / LLM)</h4>
 <span class="habit-meter meter-low">AI Risk: Zero (Authentic Human Writing)</span>
 <p style="font-size: 0.88rem; line-height: 1.5; color: var(--text-secondary); margin: 0 0 12px;">
             Zero AI usage. Writes very brief, 1–2 sentence human observations directly below oscilloscope captures.
@@ -4828,7 +4979,7 @@ html.js .lab-panel.panel-hidden {
 </div>
 <!-- Copying Habit Column -->
 <div class="habit-box">
-<h4>👥 Peer Collaboration &amp; Copying Habit</h4>
+<h4>👥 Group 1: Copy (From Other Students)</h4>
 <span class="habit-meter meter-low">Copying Risk: Zero to Very Low (Solo Answering)</span>
 <div style="font-size: 0.82rem; margin-bottom: 8px; color: var(--primary); font-weight: 600;">
             Frequent Partners: None (Independent Minimalist)
